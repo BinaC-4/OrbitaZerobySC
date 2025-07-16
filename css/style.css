@@ -82,7 +82,8 @@ body {
 }
 
 #sumario-list li.nivel-h3::before {
-  content: "⏾";
+  content: "\23BE";
+  font-family: Arial, "Segoe UI Symbol", sans-serif;
   color: #aecffc;
   margin-right: 0.5rem;
 }
@@ -304,13 +305,14 @@ form {
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     body {
         font-size: 1rem;
     }
 
     .conteudo {
         padding: 1rem;
+        max-width: 100%;
     }
 
     .cabecalho {
