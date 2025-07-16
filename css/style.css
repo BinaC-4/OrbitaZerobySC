@@ -82,7 +82,7 @@ body {
 }
 
 #sumario-list li.nivel-h3::before {
-  content: "\26BE";
+  content: "\23BE";
   font-family: Arial, "Segoe UI Symbol", sans-serif;
   color: #aecffc;
   margin-right: 0.5rem;
