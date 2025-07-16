@@ -3,8 +3,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #0c1624;
     color: #C9D1D9;
-    font-size: 20px;
-    margin: auto;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;    
+    overflow-x: hidden;
 }
 
 .conteudo {
@@ -12,19 +14,20 @@ body {
     margin: 0 auto;  
     text-align: justify;
     padding: 2rem;
+    box-sizing: border-box;
 }
 
 .cabecalho {
     text-align: center;
-    font-size: 18px;
-    margin: 70px 0px;
+    font-size: 1.1rem;
+    margin: 4rem 0;
 }
 
 .principal a {
-    font-size: 21px;
+    font-size: 1.1rem;
     text-decoration: none;
     color: #C9D1D9;
-    margin: 0px;
+    margin: 4rem 0;
 }
 
 .principal a:hover{
@@ -34,11 +37,12 @@ body {
 
 .sumario {
     border: 1px solid #ccc;
-    padding: 10px 60px 40px 60px;
+    padding: 2rem;
     width: auto;
     border-radius: 30px;
-    margin: 50px 0px;
+    margin: 3rem 0;
     background-color: #1a2433;
+    min-height: 300px;
 }
 
 #sumario-list {
@@ -60,7 +64,7 @@ body {
 #sumario-list li.nivel-h2 > a {
     color: #88a0c2;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.3rem;
 }
 
 #sumario-list li.nivel-h2 {
@@ -70,20 +74,21 @@ body {
 
 #sumario-list li.nivel-h2::before {
   content: "✦";
-  margin-top: 10px;
+  margin-top: 0.5rem;
 }
 
 #sumario-list li.nivel-h3 {
-  padding-left: 20px;
+  padding-left: 1.5rem;
 }
 
 #sumario-list li.nivel-h3::before {
   content: "⏾";
   color: #aecffc;
+  margin-right: 0.5rem;
 }
 
 #sumario-list li.nivel-h4 {
-  padding-left: 40px;
+  padding-left: 2.5rem;
 }
 
 #sumario-list li.nivel-h4::before {
@@ -92,7 +97,7 @@ body {
 }
 
 h1 {
-    font-size: 85px;
+    font-size: 5.3rem;
     font-weight: 300;
     color: #F0F6FC;
     font-family: Pompiere, sans-serif;
@@ -101,33 +106,38 @@ h1 {
 
 h2 {
     color: #58A6FF;
-    font-size: 45px;
+    font-size: 2.8rem;
     font-family: 'Montserrat Alternates', serif;
 }
 
 h3 {
     color: #4b7bbf;
-    font-size: 30px;
+    font-size: 1.9rem;
     font-style: bold;
 }
 
 h4 {
     color: #284a79;
+    font-size: 1.3rem;
 }
 
 [class^='parte'] {
-    margin-bottom: 70px;
+    margin-bottom: 4.5rem;
 }
 
 [class^="lista"] {
-    line-height: 1.6em;
+    line-height: 1.6;
     margin: 10px;
 }
 
 .parte_quote {
     margin: 90px 0px;
     color: #aebed6;
-    text-align: center justify;
+    text-align: justify;
+}
+
+#conteudojs {
+    min-height: 100vh;
 }
 
 #conteudojs h2 {
@@ -164,71 +174,46 @@ li::marker {
 
 pre {
     color: #415c82;
+    overflow: auto;
+    word-wrap: break-word;
 }
 
-.linkhtml a {
-    font-size: 21px;
-    text-decoration: none;
-    color: #b6cef0;
-    margin: 0px;
-}
-
-.linkhtml a:hover {
+.linkhtml a:hover,
+.ref a:hover,
+.elementoshtml a:hover {
     text-decoration: underline;
     color: #8fbbf7;
 }
 
-.linkhtml li {
-    list-style-type: none;
-}
-
-.linkhtml li::before {
-    content: "⌯⌲";
-    margin-right: 10px;
-    color: #8ca1bf;
-}
-
-.ref a {
-    font-size: 21px;
-    text-decoration: none;
-    color: #b6cef0;
-    margin: 0px;
-    line-height: 1.7;
-}
-
-.ref a:hover {
-    text-decoration: underline;
-    color: #8fbbf7;
-}
-
-.elementoshtml a {
-    font-size: 21px;
-    text-decoration: none;
-    color: #b6cef0;
-    margin: 0px;
-    line-height: 1.7;
-}
-
-.elementoshtml a:hover{
-    text-decoration: underline;
-    color: #8fbbf7;
-}
-
+.linkhtml li,
+.ref li,
 .elementoshtml li {
     list-style-type: none;
 }
 
+.linkhtml li::before,
+.ref li::before,
 .elementoshtml li::before {
     content: "⌯⌲";
     margin-right: 10px;
     color: #8ca1bf;
 }
 
-p a {
-    font-size: 21px;
+.linkhtml a,
+.ref a,
+.elementoshtml a {
+    font-size: 1.3rem;
     text-decoration: none;
     color: #b6cef0;
-    margin: 0px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+p a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #b6cef0;
+    margin: 0;
     line-height: 1.7;
 }
 
@@ -247,7 +232,7 @@ form {
     text-align: center;
     font-weight: bold;
     color: #8ca1bf;
-    font-size: 17px;
+    font-size: 1.1rem;
 }
 
 .formulario {
@@ -257,6 +242,7 @@ form {
   background-color: #1a2433;
   border-radius: 8px;
   color: #C9D1D9;
+  box-sizing: border-box;
 }
 
 .formulario label {
@@ -266,16 +252,19 @@ form {
 }
 
 .formulario input,
-.formulario textarea {
+.formulario textarea,
+.formulario button {
   width: 100%;
+  min-width: 44px;
   padding: 10px 12px;
   margin-top: 0.4rem;
   border: 1px solid #888;
   border-radius: 6px;
   background-color: #8ca1bf;
   color: #f1f1f1;
-  font-size: 16px;
+  font-size: 1rem;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 .formulario input:focus,
@@ -290,7 +279,6 @@ form {
   margin-bottom: 10px;
   background-color: #41526b;
   border: none;
-  border-radius: 6px;
   color: #1e1e1e;
   font-weight: bold;
   cursor: pointer;
@@ -315,3 +303,94 @@ form {
   font-size: 16px;
   box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .conteudo {
+        padding: 1rem;
+    }
+
+    .cabecalho {
+        font-size: 1rem;
+        margin: 2rem 0;
+    }
+
+    .principal a {
+        font-size: 1rem;
+    }
+
+    .sumario {
+        padding: 1rem;
+        margin: 2rem 0;
+    }
+
+    #sumario-list li.nivel-h2 > a {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    .parte_quote {
+        margin: 50px 0;
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+
+    [class^='parte'] {
+        margin-bottom: 2.5rem;
+    }
+
+    [class^="lista"] {
+        margin: 6px;
+        font-size: 1rem;
+    }
+
+    #conteudojs h2, 
+    #conteudojs h3 {
+        margin-top: 2rem;
+    }
+
+    pre {
+        font-size: 0.9rem;
+    }
+
+    p a { 
+        font-size: 1rem;
+    }
+
+    form {
+        font-size: 1rem;
+    }
+
+    .formulario {
+        padding:1rem;
+        margin: 1rem;
+    }
+
+    .formulario input,
+    .formulario textarea,
+    .formulario button {
+        font-size: 0.9rem;
+    }
+
+    .agrdecimento {
+        margin-top: 40px;
+        font-size: 1rem;
+    }
