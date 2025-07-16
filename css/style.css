@@ -9,6 +9,11 @@ body {
     overflow-x: hidden;
 }
 
+ul li,
+ol li {
+    margin-bottom: 14px;
+}
+
 .conteudo {
     max-width: 1100px;
     margin: 0 auto;  
@@ -310,6 +315,11 @@ form {
         font-size: 1rem;
     }
 
+    ul li,
+    ol li {
+        margin-bottom: 10px;
+    }
+
     .conteudo {
         padding: 1rem;
         max-width: 100%;
@@ -395,4 +405,4 @@ form {
     .agrdecimento {
         margin-top: 40px;
         font-size: 1rem;
-    }
+    }}
