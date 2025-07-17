@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sumario = document.getElementById("sumario-list");
     const conteudo = document.getElementById("conteudojs");
-    const headers = conteudo.querySelectorAll("h2, h3, h4");
+    const headers = conteudo.querySelectorAll("h2, h3, h4, h5");
 
     headers.forEach((header, index) => {
         if (!header.id) {
@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (header.tagName === "H4") {
             li.classList.add("nivel-h4");
             li.style.marginLeft = "40px";
+        } else if (header.tagName === "H5") {
+            li.classList.add("nivel-h5");
+            li.style.marginLeft = "60px";
         }
 
         li.appendChild(a);

@@ -102,6 +102,16 @@ ol li {
   color: #4a8eed;
 }
 
+#sumario-list li.nivel-h5 {
+  padding-left: 60px;
+}
+
+#sumario-list li.nivel-h5::before {
+  content: "☁︎";
+  color: #6ea7ff;
+  margin-right: 10px;
+}
+
 h1 {
     font-size: 5.3rem;
     font-weight: 300;
@@ -124,7 +134,12 @@ h3 {
 
 h4 {
     color: #284a79;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    color: #224a99;
 }
 
 [class^='parte'] {
@@ -341,6 +356,13 @@ form {
 
     #sumario-list li.nivel-h2 > a {
         font-size: 1rem;
+    }
+
+    #sumario-list li.nivel-h3::before {
+        content: "☾";
+        font-family: Arial, sans-serif;
+        color: #aecffc;
+        margin-right: 0.5rem;
     }
 
     h1 {

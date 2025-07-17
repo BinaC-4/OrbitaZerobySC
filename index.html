@@ -24,8 +24,9 @@
             <h1>Repositório de Estudos Front-End</h1>
 
             <div class="cabecalho">
-                <p>Seja bem-vindo ao Órbita Zero, meu repositório de estudos do curso “Front-End: Minha primeira página web!”, produzido pela startup Progra{M}aria.</p>
-                <p>Aqui você encontrará minhas anotações feitas ao longo do curso. Todo o conteúdo foi criado e escrito por mim, uma iniciante na área de desenvolvimento e programação. Caso identifique algum erro ou imprecisão, sinta-se à vontade para me informar, ao final da página haverá um espaço para envio de feedbacks.</p>
+                <p>Este site é um repositório de conteúdo introdutório em HTML, CSS e JavaScript, organizado com base no curso "Front-End: Minha primeira página web!, promovido pela Progra{M}aria.</p>
+                <p>As seções a seguir apresentam os principais conceitos estudados, acompanhados de exemplos e estruturas fundamentais de cada linguagem.</p>
+                <p>Todo o conteúdo foi criado e escrito por mim, uma iniciante na área de desenvolvimento e programação. Caso identifique algum erro ou imprecisão, sinta-se à vontade para me informar, ao final da página haverá um espaço para envios de feedbacks.</p>
             </div>
 
             <div class="sumario">
@@ -46,7 +47,7 @@
                             </div>
 
                             <div class="parte2">
-                                <h4>Origem da Internet:</h4>
+                                <h4>Origem da Internet</h4>
                                     <p>A internet foi criada a partir da ARPANET, desenvolvida nos Estados Unidos no final da década de 1960. Sua motivação original era militar: garantir a continuidade da comunicação e o acesso a informações estratégicas mesmo em caso de ataques, como um ataque nuclear. Hoje, seu uso é amplamente diferente, voltado para fins civis e comerciais.</p>
                                     <p>A internet como conhecemos hoje só surgiu nos anos 1980-1990.</p>
 
@@ -54,7 +55,7 @@
                             </div>
 
                             <div class="parte3">
-                                <h4>Termos:</h4>
+                                <h4>Termos mais comuns</h4>
                                 <p>➜ Datacenter (Centro de Dados): é uma instalação física projetada para abrigar sistemas computacionais críticos, como:</p>
                                     <ul>
                                         <li>Servidores (computadores de alto desempenho);</li>
@@ -92,11 +93,11 @@
                             </div>
 
                             <div class="parte6">
-                                <p>Linguagens que constituem esses arquivos:</p>
+                                <p>Linguagens que constituem esses arquivos</p>
                                     <ul>
-                                        <li>HTML - Define a estrutura de elementos (textos, títulos, links)</li>
-                                        <li>CSS - define a aparência (cores, fontes, layout)</li>
-                                        <li>JavaScript - define os comportamentos e interações (menus, formulários, animações)</li>
+                                        <li><strong>HTML</strong> - Define a estrutura de elementos (textos, títulos, links)</li>
+                                        <li><strong>CSS</strong> - define a aparência (cores, fontes, layout)</li>
+                                        <li><strong>JavaScript</strong> - define os comportamentos e interações (menus, formulários, animações)</li>
                                     </ul>
                             </div>
 
@@ -105,7 +106,7 @@
                             </div>
 
                             <div class="parte7">
-                                <h4>Simplificando:</h4>
+                                <h4>Simplificando</h4>
                                     <p>Quando fazemos pesquisas em navegadores, enviamos e-mails ou acessamos receitas, estamos solicitando dados que estão armazenados em servidores remotos. Esses servidores nos enviam arquivos compostos por códigos (HTML, CSS, JavaScript, etc.), que são interpretados pelos navegadores e exibidos como páginas, textos, imagens ou vídeos.</p>
                                     <p>Antes de chegar até nós, esses dados trafegam por uma rede de servidores e roteadores — passando por diversos pontos até atingir o nosso dispositivo.</p>
                             </div>
@@ -129,100 +130,116 @@
                     <section id="html">
                         <h2>HTML ✶⋆.˚</h2>
                             
-                            <h3>O que é HTML?</h3>
+                            <h3>Introdução ao HTML</h3>
+                                <h4>O que é?</h4>
+                                    
+                                    <p>HTML – HyperText Markup Language (Linguagem de Marcação de Hipertexto)</p>
+
+                                    <p>HTML é a linguagem usada para estruturar o conteúdo de páginas da web. Ela define a hierarquia e a organização dos elementos, como textos, títulos, listas, links, imagens, vídeos e tabelas. É o esqueleto da página.</p>
+
+                                    <p>Importante: HTML não é uma linguagem de programação. Trata-se de uma linguagem de marcação, usada apenas para organizar e apresentar o conteúdo — sem lógica, condições ou interações dinâmicas.</p>
+                        
+                                <h4>Como funciona a estrutura de um documento HTML?</h4>
+                                    <p>Um documento HTML é organizado em uma estrutura hierárquica, que define como os elementos se relacionam e são apresentados na página. A estrutura básica de um documento HTML inclui as seguintes partes:</p>
+                                        <ol>
+                                            <li><strong>Declaração do tipo de documento:</strong> &lt;!DOCTYPE html&gt; - informa ao navegador que este é um documento HTML.</li>
+                                            <li><strong>Elemento raiz:</strong> &lt;html&gt; - envolve todo o conteúdo da página.</li>
+                                            <li><strong>Elemento head:</strong> &lt;head&gt; - contém metadados, como título, links para estilos e scripts.</li>
+                                            <li><strong>Elemento body:</strong> &lt;body&gt; - contém o conteúdo visível da página, como textos, imagens e links.</li>
+                                        </ol>   
                                 
-                                <p>HTML – HyperText Markup Language (Linguagem de Marcação de Hipertexto)</p>
+                                    <p>Exemplo de estrutura básica:</p>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Título da Página&lt;/title&gt;
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;
+                &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+                &lt;a href="https://www.exemplo.com"&gt;Clique aqui&lt;/a&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>      
 
-                                <p>HTML é a linguagem usada para estruturar o conteúdo de páginas da web. Ela define a hierarquia e a organização dos elementos, como textos, títulos, listas, links, imagens, vídeos e tabelas. É o esqueleto da página.</p>
+                                    <p>Essa estrutura é a base de qualquer página HTML. A partir dela, você pode adicionar mais elementos e personalizar o conteúdo.</p>
+                            
+                            
+                            <h3>Tags HTML</h3>
 
-                                <p>Importante: HTML não é uma linguagem de programação. Trata-se de uma linguagem de marcação, usada apenas para organizar e apresentar o conteúdo — sem lógica, condições ou interações dinâmicas.</p>
+                                <h4>O que são?</h4>
 
-                            <h3>O que são tags no HTML?</h3>
+                                    <p>As tags HTML são elementos fundamentais da linguagem. Elas funcionam como “etiquetas” que indicam o papel de cada parte do conteúdo em uma página — títulos, parágrafos, listas, links, imagens, tabelas, entre outros.</p>
 
-                                <p>As tags HTML são elementos fundamentais da linguagem. Elas funcionam como “etiquetas” que indicam o papel de cada parte do conteúdo em uma página — títulos, parágrafos, listas, links, imagens, tabelas, entre outros.</p>
+                                    <p>Cada tag é escrita entre sinais de “menor que” e “maior que” (< >). A maioria das tags possui abertura e fechamento:</p>
 
-                                <p>Cada tag é escrita entre sinais de “menor que” e “maior que” (< >). A maioria das tags possui abertura e fechamento:</p>
+                                    <p>&lt;p&gt;Texto desejado&lt;/p&gt;</p>
 
-                                <p>&lt;p&gt;Texto desejado&lt;/p&gt;</p>
+                                    <p>No exemplo acima:</p>
+                                        <ul>
+                                            <li> &lt;p&gt; abre um parágrafo; </li>
+                                            <li> &lt;/p&gt; fecha o parágrafo. </li>
+                                        </ul>
 
-                                <p>No exemplo acima:</p>
+                                    <p>A barra / dentro da tag indica o fim daquele elemento.</p>
+
+                                    <p>Nem todas as tags exigem fechamento. Algumas são chamadas de tags autoencerradas, como &lt;img&gt; (imagem) e &lt;br&gt; (quebra de linha). Essas não possuem conteúdo interno e são usadas sozinhas.</p>
+
+                                    <p>HTML é composto quase totalmente por tags, por isso é essencial conhecê-las bem. Para uma lista completa, consulte a documentação oficial:</p>
+                                        <div class="elementoshtml">
+                                            <ul>
+                                                <li><a href='https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements' target="_blanke"> Lista completa de elementos HTML na MDN</a></li>
+                                            </ul>
+                                        </div>
+
+                                
+
+                                <h4>Principais Tags e suas funções</h4>
+
+                                    <p>Algumas das principais tags HTML que você deve conhecer são:</p>
                                     <ul>
-                                        <li> &lt;p&gt; abre um parágrafo; </li>
-                                        <li> &lt;/p&gt; fecha o parágrafo. </li>
+                                        <li><strong>&lt;h1&gt; a &lt;h6&gt;:</strong> Títulos, do mais importante (h1) ao menos importante (h6).</li>
+                                        <li><strong>&lt;p&gt;:</strong> Parágrafo.</li>
+                                        <li><strong>&lt;a&gt;:</strong> Link (âncora).</li>
+                                        <li><strong>&lt;img&gt;:</strong> Imagem.</li>
+                                        <li><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;:</strong> Listas não ordenadas (ul), ordenadas (ol) e itens de lista (li).</li>
+                                        <li><strong>&lt;div&gt;:</strong> Divisão ou seção genérica.</li>
+                                        <li><strong>&lt;span&gt;:</strong> Span, usado para estilizar partes específicas do texto.</li>
+                                        <li><strong>&lt;br&gt;:</strong> Quebra de linha.</li>
+                                        <li><strong>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;:</strong> Tabela, linha de tabela, célula de tabela e cabeçalho de tabela.</li>
                                     </ul>
 
-                                <p>A barra / dentro da tag indica o fim daquele elemento.</p>
-
-                                <p>Nem todas as tags exigem fechamento. Algumas são chamadas de tags autoencerradas, como &lt;img&gt; (imagem) e &lt;br&gt; (quebra de linha). Essas não possuem conteúdo interno e são usadas sozinhas.</p>
-
-                                <p>HTML é composto quase totalmente por tags, por isso é essencial conhecê-las bem. Para uma lista completa, consulte a documentação oficial:</p>
-                                    <div class="elementoshtml">
-                                        <ul>
-                                            <li><a href='https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements' target="_blanke"> Lista completa de elementos HTML na MDN</a></li>
-                                        </ul>
-                                    </div>
-
-                            <h3>Como funciona a estrutura de um documento HTML?</h3>
-                                <p>Um documento HTML é organizado em uma estrutura hierárquica, que define como os elementos se relacionam e são apresentados na página. A estrutura básica de um documento HTML inclui as seguintes partes:</p>
-                                    <ol>
-                                        <li>Declaração do tipo de documento: &lt;!DOCTYPE html&gt; - informa ao navegador que este é um documento HTML.</li>
-                                        <li>Elemento raiz: &lt;html&gt; - envolve todo o conteúdo da página.</li>
-                                        <li>Elemento head: &lt;head&gt; - contém metadados, como título, links para estilos e scripts.</li>
-                                        <li>Elemento body: &lt;body&gt; - contém o conteúdo visível da página, como textos, imagens e links.</li>
-                                    </ol>   
-                            
-                                <p>Exemplo de estrutura básica:</p>
-<pre>
-&lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-        &lt;head&gt;
-            &lt;title&gt;Título da Página&lt;/title&gt;
-            &lt;link rel="stylesheet" href="styles.css"&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;
-            &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
-            &lt;a href="https://www.exemplo.com"&gt;Clique aqui&lt;/a&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
-</pre>      
-
-                                <p>Essa estrutura é a base de qualquer página HTML. A partir dela, você pode adicionar mais elementos e personalizar o conteúdo.</p>
-
-                            <h3>Princioais Tags HTML</h3>
-
-                                <p>Algumas das principais tags HTML que você deve conhecer são:</p>
-                                <ul>
-                                    <li>&lt;h1&gt; a &lt;h6&gt;: Títulos, do mais importante (h1) ao menos importante (h6).</li>
-                                    <li>&lt;p&gt;: Parágrafo.</li>
-                                    <li>&lt;a&gt;: Link (âncora).</li>
-                                    <li>&lt;img&gt;: Imagem.</li>
-                                    <li>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;: Listas não ordenadas (ul), ordenadas (ol) e itens de lista (li).</li>
-                                    <li>&lt;div&gt;: Divisão ou seção genérica.</li>
-                                    <li>&lt;span&gt;: Span, usado para estilizar partes específicas do texto.</li>
-                                    <li>&lt;br&gt;: Quebra de linha.</li>
-                                    <li>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;: Tabela, linha de tabela, célula de tabela e cabeçalho de tabela.</li>
-                                </ul>
-
-                                <p>Essas tags são fundamentais para estruturar o conteúdo de uma página HTML. Você pode combiná-las e aninhá-las para criar layouts complexos e organizar informações de forma clara.</p>
+                                    <p>Essas tags são fundamentais para estruturar o conteúdo de uma página HTML. Você pode combiná-las e aninhá-las para criar layouts complexos e organizar informações de forma clara.</p>
 
                             <h3>Elementos sêmanticos</h3>
 
-                                <p>Elementos semânticos são tags HTML que possuem significado específico e ajudam a descrever o conteúdo da página de forma mais clara. Eles melhoram a acessibilidade e a compreensão do código, tanto para humanos quanto para máquinas.</p>
-                                <p>Alguns exemplos de elementos semânticos são:</p>
-                                <ul>
-                                    <li>&lt;header&gt;: Cabeçalho da página ou seção.</li>
-                                    <li>&lt;nav&gt;: Navegação, links para outras páginas ou seções.</li>
-                                    <li>&lt;main&gt;: Conteúdo principal da página.</li>
-                                    <li>&lt;article&gt;: Artigo independente, como uma postagem de blog.</li>
-                                    <li>&lt;section&gt;: Seção genérica de conteúdo.</li>
-                                    <li>&lt;aside&gt;: Conteúdo relacionado, como uma barra lateral.</li>
-                                    <li>&lt;footer&gt;: Rodapé da página ou seção.</li>
-                                </ul>
+                                <h4>O que são e qual sua importância</h4>
 
-                                <p>Esses elementos ajudam a organizar o conteúdo de forma lógica e facilitam a leitura e interpretação do código. Além disso, eles são importantes para SEO (Search Engine Optimization) e acessibilidade, pois fornecem informações adicionais sobre a estrutura da página.</p>
-                                
-                            <h3>Atributos html</h3>
+                                    <p>Elementos semânticos são tags HTML que descrevem claramente o tipo de conteúdo que envolvem, indo além da simples estruturação visual. Eles indicam o propósito e a função do conteúdo para navegadores, leitores de tela, motores de busca e outros agentes automatizados.</p> 
+                                    <p>A importância dos elementos semânticos está em diversos aspectos:</p> 
+                                        <ul> 
+                                            <li><strong>Acessibilidade:</strong> leitores de tela e dispositivos assistivos interpretam melhor o conteúdo, proporcionando uma navegação mais inclusiva para pessoas com deficiência;</li> 
+                                            <li><strong>SEO (Otimização para motores de busca):</strong> motores de busca utilizam a semântica para entender a hierarquia e relevância das informações, melhorando o posicionamento nos resultados;</li> 
+                                            <li><strong>Manutenção e leitura do código:</strong> torna o código mais organizado, legível e fácil de manter por outros desenvolvedores;</li> 
+                                            <li><strong>Compatibilidade futura:</strong> garante que o site siga padrões web modernos, facilitando a adaptação a novas tecnologias e navegadores.</li> 
+                                        </ul> 
+                                    <p>Portanto, o uso correto dos elementos semânticos é fundamental para a criação de páginas web eficientes, acessíveis e otimizadas.</p>
+
+                                    <h4>Exemplos principais:</h4>
+
+                                    <ul>
+                                        <li><strong>&lt;header&gt;:</strong> Cabeçalho da página ou seção.</li>
+                                        <li><strong>&lt;nav&gt;:</strong> Navegação, links para outras páginas ou seções.</li>
+                                        <li><strong>&lt;main&gt;:</strong> Conteúdo principal da página.</li>
+                                        <li><strong>&lt;article&gt;:</strong> Artigo independente, como uma postagem de blog.</li>
+                                        <li><strong>&lt;section&gt;:</strong> Seção genérica de conteúdo.</li>
+                                        <li><strong>&lt;aside&gt;:</strong> Conteúdo relacionado, como uma barra lateral.</li>
+                                        <li><strong>&lt;footer&gt;:</strong> Rodapé da página ou seção.</li>
+                                    </ul>
+
+                            <h3>Atributos HTML</h3>
 
                                 <h4>O que são atributos HTML?</h4>
                                     
@@ -238,68 +255,68 @@
                                             <li>target: Especifica onde o link será aberto (neste caso, em uma nova aba).</li>
                                         </ul>   
 
-                                <h4>Quais são os principais atributos HTML?</h4>
+                                <h4>Quais são os principais atributos?</h4>
                                     <p>Alguns dos principais atributos HTML que você deve conhecer são:</p>
                                     <ul>
-                                        <li>id: Identificador único para o elemento;</li>
-                                        <li>class: Classe CSS para estilização;</li>
-                                        <li>style: Estilo inline para o elemento;</li>
-                                        <li>src: Fonte de uma imagem ou script;</li>
-                                        <li>alt: Texto alternativo para imagens;</li>
-                                        <li>href: Endereço de um link;</li>
-                                        <li>target: Especifica onde o link será aberto (ex: _blank para abrir em nova aba);</li>
-                                        <li>title: Texto descritivo exibido ao passar o mouse sobre o elemento;</li>
-                                        <li>lang: Define o idioma do conteúdo;</li>
+                                        <li><strong>id:</strong> Identificador único para o elemento;</li>
+                                        <li><strong>class:</strong> Classe CSS para estilização;</li>
+                                        <li><strong>style:</strong> Estilo inline para o elemento;</li>
+                                        <li><strong>src:</strong> Fonte de uma imagem ou script;</li>
+                                        <li><strong>alt:</strong> Texto alternativo para imagens;</li>
+                                        <li><strong>href:</strong> Endereço de um link;</li>
+                                        <li><strong>target:</strong> Especifica onde o link será aberto (ex: _blank para abrir em nova aba);</li>
+                                        <li><strong>title:</strong> Texto descritivo exibido ao passar o mouse sobre o elemento;</li>
+                                        <li><strong>lang:</strong> Define o idioma do conteúdo;</li>
                                     </ul>       
 
                                     <p>Esses atributos são amplamente utilizados para estilização, acessibilidade e funcionalidade dos elementos HTML. Você pode combiná-los conforme necessário para atender às necessidades do seu projeto.</p>
 
-                                    <h5>Detalhes sobre os principais</h5>
+                                    <h5>Mais detalhes</h5>
 
                                         <div class="parte10">
-                                            <p>Link:</p>
+                                            <p><strong>Link:</strong></p>
                                                 <ul>
                                                     <li>Tag usada para vincular um recurso externo ao HTML</li>
                                                     <li>Ela não tem fechamento (</link>), pois é uma tag autossuficiente (auto-fechada)</li>
                                                     <li>Não serve só para CSS - também é usada para ícones, fontes externas, etc.</li>
                                                 </ul>
 
-                                            <p>Atributo rel:</p>
+                                            <p><strong>Atributo rel:</strong></p>
                                                 <ul>
                                                     <li>Significa "relationship” - relação</li>
                                                     <li>Diz qual é a relação entre o HTML e o arquivo que está sendo linkado.</li>
-                                                    <li>No caso: rel="stylesheet” → indica que o arquivo externo é uma folha de estilo CSS</li>
+                                                    <li><strong>No caso:</strong> rel="stylesheet” → indica que o arquivo externo é uma folha de estilo CSS</li>
                                                 </ul>
 
-                                            <p>Atributo href:</p>
+                                            <p><strong>Atributo href:</strong></p>
                                                 <ul>
                                                     <li>Significa "hyperlink reference”</li>
                                                     <li>Aponta onde está localizado o arquivo CSS que será usado.</li>
-                                                    <li>Exemplo: href:"style.css” → o navegador vai buscar um arquivo chamado style.css na mesma pasta onde está o arquivo HTML</li>
+                                                    <li><strong>Exemplo:</strong> href:"style.css” → o navegador vai buscar um arquivo chamado style.css na mesma pasta onde está o arquivo HTML</li>
                                                 </ul>
 
-                                            <p>Stylesheet:</p>
+                                            <p><strong>Stylesheet:</strong></p>
                                                 <ul>
                                                     <li>Significa "folha de estilos”</li>
                                                     <li>Diz ao navegador: “o arquivo que estou linkndo é uma folha de estilo css". Ou seja, o navegador entende que o conteúdo desse arquivo deve ser usado para estilizar a página HTML (cores, fontes, tamanhos, etc)</li>
-                                                    <li>IMPORTANTE! 
+                                                    <li><strong>IMPORTANTE!</strong> 
                                                         Se você trocar stylesheet por qualquer outra palavra, o navegador não vai aplicar o CSS, porque ele não vai reconhecer o tipo de relação.</li>
                                                 </ul>
 
-                                            <p>Atributo target:</p>
+                                            <p><strong>Atributo target:</strong></p>
                                                 <ul>
                                                     <li>Significa "alvo”</li>
                                                     <li>Indica onde o link deve ser aberto</li>
-                                                    <li>Exemplo: target="_blank" → abre o link em uma nova aba do navegador</li>
+                                                    <li><strong>Exemplo:</strong> target="_blank" → abre o link em uma nova aba do navegador</li>
                                                 </ul>
 
-                                            <p>Resumo direto:</p>
+                                            <p><strong>Simplificando:</strong></p>
                                                 <ul>
-                                                    <li>link : Tag usada para vincular um recurso externo ao HTML</li>
-                                                    <li>stylesheet : Arquivo de estilo CSS</li>
-                                                    <li>rel : Define a relação entre o HTML e o arquivo externo</li>
-                                                    <li>href : Caminho até o arquivo CSS</li>
-                                                    <li>target : Onde o link será aberto</li>
+                                                    <li><strong>link :</strong> Tag usada para vincular um recurso externo ao HTML</li>
+                                                    <li><strong>stylesheet :</strong> Arquivo de estilo CSS</li>
+                                                    <li><strong>rel :</strong> Define a relação entre o HTML e o arquivo externo</li>
+                                                    <li><strong>href :</strong> Caminho até o arquivo CSS</li>
+                                                    <li><strong>target :</strong> Onde o link será aberto</li>
                                                 </ul>
                                         </div>
                                         
@@ -318,6 +335,25 @@
                                     <li>Utilizar atributos alt em imagens, para melhorar a acessibilidade;</li>
                                 </ul>
 
+                                <h4>Organização do código</h4>
+                                    <p>Um código bem organizado facilita a leitura, manutenção e colaboração com outras pessoas. Estruture os elementos em uma hierarquia clara, agrupe conteúdos relacionados e evite duplicações desnecessárias. Cada seção da página deve ter uma função específica e delimitada, com uso adequado de &lt;div&gt;, &lt;section&gt;, &lt;article&gt;, entre outros.</p>
+
+
+                                <h4>Uso correto das tags semânticas</h4>
+                                    <p>Evite usar &lt;div&gt; ou &lt;span&gt; para tudo. Prefira elementos semânticos como &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt; e &lt;footer&gt;. Eles informam ao navegador e a outros agentes qual o papel de cada conteúdo, melhorando a acessibilidade, o SEO e a estrutura do site.</p>
+
+                                <h4>Indentação</h4>
+                                    <p>A indentação correta — com dois ou quatro espaços por nível — ajuda a visualizar a hierarquia dos elementos. Todo conteúdo filho deve ser recuado em relação ao elemento pai. Isso torna o código mais legível e reduz a chance de erros de fechamento de tags.</p>
+
+                                    <p>Exemplo:</p>
+
+                                    <pre>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+                                    </pre>
+
                             <p>Observação: Um código bem escrito e organizado faz com que o SEO (Search Engine Optimization) funcione melhor, pois os mecanismos de busca conseguem entender melhor o conteúdo da página. E, caso seu código tenha erros, o navegador pode não exibir a página corretamente, ou até mesmo lhe penalizar nos resultados de busca.</p>
 
                             <p>Saiba mais sobre HTML em:</p>
@@ -332,85 +368,86 @@
                     <section id="css">
                         <h2>CSS ✶⋆.˚</h2>
 
-                            <h3>O que é CSS?</h3>
+                            <h3>Introdução ao CSS</h3>
 
-                                <p>CSS – Cascading Style Sheets (Folhas de Estilo em Cascata)</p>   
+                                <h4>O que é CSS?</h4>
+                                    <p>CSS – Cascading Style Sheets (Folhas de Estilo em Cascata)</p>   
 
-                                <p>CSS é a linguagem usada para estilizar e formatar o conteúdo de páginas HTML. Ela define como os elementos devem ser exibidos, incluindo cores, fontes, tamanhos, espaçamentos e layout. É responsável pela aparência visual da página.</p>
-                                <p>Importante: CSS também não é uma linguagem de programação. Trata-se de uma linguagem de estilo, usada apenas para definir a apresentação visual do conteúdo — sem lógica ou interações dinâmicas.</p>
+                                    <p>CSS é a linguagem usada para estilizar e formatar o conteúdo de páginas HTML. Ela define como os elementos devem ser exibidos, incluindo cores, fontes, tamanhos, espaçamentos e layout. É responsável pela aparência visual da página.</p>
+                                    <p>Importante: CSS também não é uma linguagem de programação. Trata-se de uma linguagem de estilo, usada apenas para definir a apresentação visual do conteúdo — sem lógica ou interações dinâmicas.</p>
 
-                            <h3>Como funciona o CSS?</h3>
+                                <h4>Como funciona?</h4>
 
-                                <p>O CSS funciona aplicando regras de estilo aos elementos HTML. Essas regras são compostas por seletores e declarações, que definem quais elementos serão estilizados e como.</p>
-                                <p>Exemplo de regra CSS:</p>
-                                    <pre>
-    h1 {
-        color: blue;
-        font-size: 24px;
-    }
-                                    </pre>
-
-                                    <p>No exemplo acima:</p>
-                                        <ul>
-                                            <li>h1 é o seletor, que indica que a regra se aplica a todos os elementos &lt;h1&gt;;</li>
-                                            <li>color: blue; é uma declaração que define a cor do texto como azul;</li>
-                                            <li>font-size: 24px; é outra declaração que define o tamanho da fonte como 24 pixels.</li>
-                                        </ul>
-
-                                    <p>As regras CSS podem ser aplicadas a qualquer elemento HTML, permitindo personalizar a aparência de textos, imagens, links, tabelas e muito mais.</p> 
-
-                                    <p>As propriedades mais comuns do CSS incluem:</p>
-                                        <ul>
-                                            <li>color: Cor do texto;</li>
-                                            <li>background-color: Cor de fundo;</li>
-                                            <li>font-size: Tamanho da fonte;</li>
-                                            <li>font-family: Família da fonte;</li>
-                                            <li>margin: Margem externa;</li>
-                                            <li>padding: Preenchimento interno;</li>
-                                            <li>border: Borda do elemento;</li>
-                                            <li>width e height: Largura e altura do elemento;</li>
-                                        </ul>
-
-                            <h3>Como incluir CSS em um documento HTML?</h3>
-
-                                <p>Adicionar CSS a um documento HTML pode ser feito de três maneiras principais:</p>
-                                <ol>
-                                    <li>Inline: Adicionando estilos diretamente na tag HTML usando o atributo style.</li>
-                                        
-                                    <pre>
-    &lt;h1 style="color: blue; font-size: 24px;"&gt;Título&lt;/h1&gt;
-                                    </pre>
-
-                                    <li>Internal: Incluindo um bloco de estilos dentro da tag &lt;head&gt; do HTML.</li>
+                                    <p>O CSS funciona aplicando regras de estilo aos elementos HTML. Essas regras são compostas por seletores e declarações, que definem quais elementos serão estilizados e como.</p>
+                                    <p>Exemplo de regra CSS:</p>
                                         <pre>
-    &lt;head&gt;
-        &lt;style&gt;
-            h1 {
-                color: blue;                    
-                font-size: 24px;
-            }
-        &lt;/style&gt;
-    &lt;/head&gt;           
+        h1 {
+            color: blue;
+            font-size: 24px;
+        }
                                         </pre>
-                                    <li>External: Criando um arquivo CSS separado e vinculando-o ao HTML.</li>
+
+                                        <p>No exemplo acima:</p>
+                                            <ul>
+                                                <li>h1 é o seletor, que indica que a regra se aplica a todos os elementos &lt;h1&gt;;</li>
+                                                <li>color: blue; é uma declaração que define a cor do texto como azul;</li>
+                                                <li>font-size: 24px; é outra declaração que define o tamanho da fonte como 24 pixels.</li>
+                                            </ul>
+
+                                        <p>As regras CSS podem ser aplicadas a qualquer elemento HTML, permitindo personalizar a aparência de textos, imagens, links, tabelas e muito mais.</p> 
+
+                                        <p>As propriedades mais comuns do CSS incluem:</p>
+                                            <ul>
+                                                <li><strong>color:</strong> Cor do texto;</li>
+                                                <li><strong>background-color:</strong> Cor de fundo;</li>
+                                                <li><strong>font-size:</strong> Tamanho da fonte;</li>
+                                                <li><strong>font-family:</strong> Família da fonte;</li>
+                                                <li><strong>margin:</strong> Margem externa;</li>
+                                                <li><strong>padding:</strong> Preenchimento interno;</li>
+                                                <li><strong>border:</strong> Borda do elemento;</li>
+                                                <li><strong>width e height:</strong> Largura e altura do elemento;</li>
+                                            </ul>
+
+                                <h4>Como incluir em um documento HTML?</h4>
+
+                                    <p>Adicionar CSS a um documento HTML pode ser feito de três maneiras principais:</p>
+                                    <ol>
+                                        <li><strong>Inline:</strong> Adicionando estilos diretamente na tag HTML usando o atributo style.</li>
+                                            
                                         <pre>
-    &lt;head&gt;
-        &lt;link rel="stylesheet" href="styles.css"&gt;
-    &lt;/head&gt;
-                                        </pre>      
-                                </ol>   
+        &lt;h1 style="color: blue; font-size: 24px;"&gt;Título&lt;/h1&gt;
+                                        </pre>
 
-                                <p>A forma mais recomendada é a externa, pois permite separar o conteúdo (HTML) da apresentação (CSS), facilitando a manutenção e reutilização dos estilos em várias páginas.</p>
+                                        <li><strong>Internal:</strong> Incluindo um bloco de estilos dentro da tag &lt;head&gt; do HTML.</li>
+                                            <pre>
+        &lt;head&gt;
+            &lt;style&gt;
+                h1 {
+                    color: blue;                    
+                    font-size: 24px;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;           
+                                            </pre>
+                                        <li><strong>External:</strong> Criando um arquivo CSS separado e vinculando-o ao HTML.</li>
+                                            <pre>
+        &lt;head&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;/head&gt;
+                                            </pre>      
+                                    </ol>   
 
-                            <h3>Seletores CSS</h3>  
+                                    <p>A forma mais recomendada é a externa, pois permite separar o conteúdo (HTML) da apresentação (CSS), facilitando a manutenção e reutilização dos estilos em várias páginas.</p>
+
+                            <h3>Seletores</h3>  
 
                                 <p>Seletores CSS são usados para selecionar quais elementos HTML serão estilizados. Existem vários tipos de seletores, cada um com sua finalidade:</p>
                                 <ul>
-                                    <li>Seletores de tipo: Selecionam todos os elementos de um determinado tipo (ex: h1, p, div).</li>
-                                    <li>Seletores de classe: Selecionam elementos com uma classe específica (ex: .minha-classe).</li>
-                                    <li>Seletores de ID: Selecionam um elemento com um ID específico (ex: #meu-id).</li>
-                                    <li>Seletores de atributo: Selecionam elementos com um atributo específico (ex: [type="text"]).</li>
-                                    <li>Seletores combinados: Combinam diferentes seletores para maior precisão (ex: div.minha-classe, h1#meu-id).</li>
+                                    <li><strong>Seletores de tipo:</strong> Selecionam todos os elementos de um determinado tipo (ex: h1, p, div).</li>
+                                    <li><strong>Seletores de classe:</strong> Selecionam elementos com uma classe específica (ex: .minha-classe).</li>
+                                    <li><strong>Seletores de ID:</strong> Selecionam um elemento com um ID específico (ex: #meu-id).</li>
+                                    <li><strong>Seletores de atributo:</strong> Selecionam elementos com um atributo específico (ex: [type="text"]).</li>
+                                    <li><strong>Seletores combinados:</strong> Combinam diferentes seletores para maior precisão (ex: div.minha-classe, h1#meu-id).</li>
                                 </ul>
 
                                 <p>Exemplo de uso de seletores:</p>
@@ -430,16 +467,16 @@
 
                                     <p>Importante: ID deve ser único em uma página, enquanto classes podem ser reutilizadas em vários elementos.</p>
 
-                            <h3>Unidades de medida CSS</h3>
+                            <h3>Unidades de medida</h3>
 
                                 <p>CSS utiliza diferentes unidades de medida para definir tamanhos, distâncias e proporções. As mais comuns são:</p>
                                 <ul>
-                                    <li>px: Pixels, unidade fixa baseada na resolução da tela;</li>
-                                    <li>em: Unidade relativa ao tamanho da fonte do elemento pai;</li>
-                                    <li>rem: Unidade relativa ao tamanho da fonte do elemento raiz (html);</li>
-                                    <li>%: Porcentagem, relativa ao tamanho do elemento pai;</li>
-                                    <li>vh: Viewport height, 1% da altura da janela de visualização;</li>
-                                    <li>vw: Viewport width, 1% da largura da janela de visualização.</li>
+                                    <li><strong>px:</strong> Pixels, unidade fixa baseada na resolução da tela;</li>
+                                    <li><strong>em:</strong> Unidade relativa ao tamanho da fonte do elemento pai;</li>
+                                    <li><strong>rem:</strong> Unidade relativa ao tamanho da fonte do elemento raiz (html);</li>
+                                    <li><strong>%:</strong> Porcentagem, relativa ao tamanho do elemento pai;</li>
+                                    <li><strong>vh:</strong> Viewport height, 1% da altura da janela de visualização;</li>
+                                    <li><strong>vw:</strong> Viewport width, 1% da largura da janela de visualização.</li>
                                 </ul>
 
                                 <p>Exemplo de uso de unidades de medida:</p>
@@ -454,59 +491,59 @@
     }
                                     </pre>
 
-                                <h3>Cores no CSS</h3>
+                                <h3>Cores</h3>
 
                                     <p>As cores no CSS podem ser definidas de várias maneiras:</p>
                                     <ul>
-                                        <li>Nomes de cores:</li>
+                                        <li><strong>Nomes de cores:</strong></li>
                                             <div class="lista1">
                                             <ul>
-                                                <li>Limitações: Só existem 147 nomes padrão.</li>
+                                                <li><strong>Limitações:</strong> Só existem 147 nomes padrão.</li>
                                                 <li>Não é preciso decorar, mas é pouco flexível.</li>
-                                                <li>Uso prático: Bom para testes rápidos, mas raramentes usados em projetos profissionais.</li>
-                                                <li>Exemplo: red, blue, green, black, white, gray, orange, etc.</li>
+                                                <li><strong>Uso prático:</strong> Bom para testes rápidos, mas raramentes usados em projetos profissionais.</li>
+                                                <li><strong>Exemplo:</strong> red, blue, green, black, white, gray, orange, etc.</li>
                                             </ul>
                                             </div>
-                                        <li>Códigos hexadecimais:</li>
+                                        <li><strong>Códigos hexadecimais:</strong></li>
                                             <div class="lista2">
                                             <ul>
-                                                <li>Formato: # seguido por 6 dígitos hexadecimais (0-9, A-F);</li>
-                                                <li>Flexível e amplamente utilizado em projetos profissionais.</li>
-                                                <li>Exemplo: #FF0000 (vermelho), #0000FF (azul);</li>
+                                                <li><strong>Formato:</strong> # seguido por 6 dígitos hexadecimais (0-9, A-F);</li>
+                                                <li> e amplamente utilizado em projetos profissionais.</li>
+                                                <li><strong>Exemplo:</strong> #FF0000 (vermelho), #0000FF (azul);</li>
                                             </ul>
                                             </div>
-                                        <li>RGB:</li>
+                                        <li><strong>RGB:</strong></li>
                                             <div class="lista3">
                                             <ul>
-                                                <li>Formato: rgb(quantidade de vermelho, quantidade de verde, quantidade de azul);</li>
+                                                <li><strong>Formato:</strong> rgb(quantidade de vermelho, quantidade de verde, quantidade de azul);</li>
                                                 <li>Cada valor varia de 0 a 255;</li>
                                                 <li>Permite criar uma ampla gama de cores.</li>
-                                                <li>Exemplo: rgb(255, 0, 0) é vermelho puro, rgb(0, 255, 0) é verde puro.</li>
+                                                <li><strong>Exemplo:</strong> rgb(255, 0, 0) é vermelho puro, rgb(0, 255, 0) é verde puro.</li>
                                             </ul>
                                             </div>
-                                        <li>RGBA:</li>
+                                        <li><strong>RGBA:</strong></li>
                                             <div class="lista4">
                                             <ul>
                                                 <li>Semelhante ao RGB, mas com um quarto valor para opacidade (0 a 1);</li>
                                                 <li>Permite definir a transparência da cor;</li>
-                                                <li>Exemplo: rgba(255, 0, 0, 0.5) é vermelho com 50% de opacidade.</li>
+                                                <li><strong>Exemplo:</strong> rgba(255, 0, 0, 0.5) é vermelho com 50% de opacidade.</li>
                                             </ul>
                                             </div>
-                                        <li>HSL:</li>
+                                        <li><strong>HSL:</strong></li>
                                             <div class="lista5">
                                             <ul>
-                                                <li>Formato: hsl(hue, saturation, lightness);</li>
+                                                <li><strong>Formato:</strong> hsl(hue, saturation, lightness);</li>
                                                 <li>Hue (matiz) varia de 0 a 360 graus (círculo de cores);</li>
                                                 <li>Saturation (saturação) e lightness (luminosidade) variam de 0% a 100%;</li>
-                                                <li>Exemplo: hsl(0, 100%, 50%) é vermelho puro, hsl(240, 100%, 50%) é azul puro.</li>
+                                                <li><strong>Exemplo:</strong> hsl(0, 100%, 50%) é vermelho puro, hsl(240, 100%, 50%) é azul puro.</li>
                                             </ul>
                                             </div>
-                                        <li>HSLA:</li>
+                                        <li><strong>HSLA:</li></strong>
                                             <div class="lista6">
                                             <ul>
                                                 <li>Semelhante ao HSL, mas com um quarto valor para opacidade (0 a 1);</li>
                                                 <li>Permite definir a transparência da cor;</li>
-                                                <li>Exemplo: hsla(0, 100%, 50%, 0.5) é vermelho com 50% de opacidade.</li>
+                                                <li><strong> Exemplo: </strong> hsla(0, 100%, 50%, 0.5) é vermelho com 50% de opacidade.</li>
                                             </ul>
                                             </div>
                                     </ul>       
@@ -525,26 +562,97 @@
                                         </pre>
                     </section>
 
+                                <h3>Box Model</h3>
+                                    <div class="boxmodel">
+                                        <p>O modelo de caixa do CSS (Box Model) é um conceito fundamental que define como os elementos HTML ocupam espaço na página. Todo elemento renderizado em um site é, na prática, uma "caixa" composta por quatro camadas:</p> 
+                                            <ol> 
+                                                <li><strong>Content</strong> — o conteúdo propriamente dito (texto, imagem, etc.);</li> 
+                                                <li><strong>Padding</strong> — o espaço interno entre o conteúdo e a borda da caixa;</li> 
+                                                <li><strong>Border</strong> — a borda da caixa (visível ou não);</li> 
+                                                <li><strong>Margin</strong> — o espaço externo entre a caixa e outros elementos.</li> 
+                                            </ol> 
+                                        <p>Essas quatro partes formam a estrutura visual e o comportamento do elemento em relação ao layout.</p>
+
+                                        <p>A estrutura de um elemento no modelo de caixa (Box Model) é a seguinte:</p>
+                                        <pre> 
+╔════════════════════════════════════════╗  ← margin
+║  ┌──────────────────────────────────┐  ║
+║  │          padding                 │  ║
+║  │  ┌────────────────────────────┐  │  ║
+║  │  │         content            │  │  ║
+║  │  └────────────────────────────┘  │  ║
+║  └──────────────────────────────────┘  ║
+╚════════════════════════════════════════╝  ← border
+
+                                        </pre> 
+                                        
+                                        <p>O <strong>padding</strong> afasta o conteúdo da borda interna. Já a <strong>margin</strong> afasta o elemento de outros elementos na página. A <strong>border</strong> pode ter cor, espessura e estilo, ou pode nem aparecer — mas ela sempre existe logicamente.</p>
+
+                                        <p>E para estilizar esses elementos, usamos propriedades CSS como no exemplo abaixo:</p>
+
+                                        <pre>
+.caixa {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 30px;
+}
+                                        </pre>
+
+                                        <p>Nesse exemplo, o elemento terá:</p> 
+                                        <ul> 
+                                            <li>200px de largura só para o conteúdo;</li> <li>20px de espaço interno (padding);</li> 
+                                            <li>Uma borda de 2px ao redor da caixa;</li> 
+                                            <li>30px de distância dos elementos externos (margin).</li> 
+                                        </ul>
+
+                                    </div>
+
                     <section id="js">
                         <h2>JavaScript ✶⋆.˚</h2>
                             
-                            <h3>O que é JavaScript?</h3>
+                            <h3>Introdução ao JS</h3>
+                                <h4>O que é JavaScript?</h4>
 
-                                <p>JavaScript é uma linguagem de programação usada para adicionar interatividade e dinamismo às páginas web. Ele permite criar comportamentos dinâmicos, manipular o DOM (Document Object Model), validar formulários, criar animações e muito mais.</p>
-                                <p>JavaScript sim é uma linguagem de programação completa, com lógica, condições, loops e funções. É a única linguagem de programação que roda diretamente no navegador do usuário.</p>
+                                    <p>JavaScript é uma linguagem de programação interpretada e orientada a objetos, utilizada principalmente no desenvolvimento web para tornar as páginas interativas e dinâmicas. Junto ao HTML e ao CSS, compõe a base da construção de interfaces na web.</p> 
+                                    <p>Foi criada originalmente para rodar no navegador e permitir que páginas HTML respondessem a ações do usuário, como cliques, preenchimento de formulários, animações e mudanças de conteúdo em tempo real.</p>
+                                    
+                                    <p>Sem o JavaScript, uma página é apenas estática – ou seja, só exibe conteúdo, mas não reage a nada.</p>
 
-                                <p>Sem o JavaScript, uma página é apenas estática – ou seja, só exibe conteúdo, mas não reage a nada.</p>
+                                <h4>Para que serve?</h4>
 
-                            <h3>Como funciona o JavaScript?</h3>
+                                    <p>JavaScript é usado para adicionar comportamento às páginas. Com ele, é possível:</p> 
+                                    <ul> 
+                                        <li>Manipular elementos HTML e alterar seu conteúdo, aparência ou estrutura (DOM);</li> 
+                                        <li>Responder a eventos do usuário (como clique, rolagem ou digitação);</li> 
+                                        <li>Validar formulários antes do envio ao servidor;</li> 
+                                        <li>Controlar o fluxo do programa com condições e repetições;</li> 
+                                        <li>Armazenar dados temporariamente no navegador (ex: localStorage);</li> 
+                                        <li>Fazer requisições a servidores sem recarregar a página (AJAX);</li> 
+                                        <li>Criar animações e efeitos dinâmicos.</li> 
+                                    </ul>       
+                                    
+                                
+                            <h3>Como o Js funciona no navegador</h3>
+                                
+                                <h4>Onde o Js é executado?</h4>
 
-                                <p>JavaScript funciona interpretando e executando código diretamente no navegador do usuário. Ele pode ser incluído em um documento HTML de três maneiras principais:</p>
-                                <ol>
-                                    <li>Inline: Adicionando código JavaScript diretamente na tag HTML usando o atributo onclick, por exemplo.</li>
-                                        <pre>
+                                    <p>No contexto da web, o JavaScript é executado diretamente pelo navegador do usuário (como Chrome, Firefox ou Edge). Esses navegadores possuem mecanismos internos — chamados *motores JavaScript* (como o V8, no Chrome) — que interpretam o código em tempo real e o executam.</p> 
+                                    <p>Isso significa que o JS não precisa de instalação nem compilação prévia para funcionar: basta um navegador. Ao abrir uma página que contenha JavaScript, o navegador processa o código e o executa automaticamente.</p>
+                                    
+                                    <p>Hoje, o JavaScript também pode ser executado fora do navegador (como no Node.js), mas seu uso mais comum ainda é no front-end.</p>
+
+                                
+                                <h4>Carregamento e execução</h4>
+
+                                    <p>JavaScript funciona interpretando e executando código diretamente no navegador do usuário. Ele pode ser incluído em um documento HTML de três maneiras principais:</p>
+                                    <ol>
+                                        <li><strong>Inline:</strong> Adicionando código JavaScript diretamente na tag HTML usando o atributo onclick, por exemplo.</li>
+                                            <pre>
     &lt;button onclick="alert('Olá!')"&gt;Clique aqui&lt;/button&gt;
-                                        </pre>
-                                    <li>Internal: Incluindo um bloco de script dentro da tag &lt;head&gt; ou &lt;body&gt; do HTML.</li>
-                                        <pre>
+                                            </pre>
+                                        <li><strong>Internal:</strong> Incluindo um bloco de script dentro da tag &lt;head&gt; ou &lt;body&gt; do HTML.</li>
+                                            <pre>
     &lt;head&gt;
         &lt;script&gt;
             function mostrarAlerta() {
@@ -552,24 +660,36 @@
             }
         &lt;/script&gt;
     &lt;/head&gt;
-                                        </pre>
-                                    <li>External: Criando um arquivo JavaScript separado e vinculando-o ao HTML.</li>
-                                        <pre>
+                                            </pre>
+                                        <li><strong>External:</strong> Criando um arquivo JavaScript separado e vinculando-o ao HTML.</li>
+                                            <pre>
     &lt;head&gt;
         &lt;script src="script.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
-                                        </pre>      
-                                </ol>
+                                            </pre>      
+                                    </ol>
 
-                                <p>A forma mais recomendada é a externa, pois permite separar o conteúdo (HTML) da lógica (JavaScript), facilitando a manutenção e reutilização do código.</p>
+                                    <p>A forma mais recomendada é a externa, pois permite separar o conteúdo (HTML) da lógica (JavaScript), facilitando a manutenção e reutilização do código.</p>
 
-                            <h3>Variáveois e tipos de dados</h3>
+                                    <h4>Interação com HTML e CSS</h4>
+                                        <p>O JavaScript se conecta ao HTML e ao CSS por meio da <strong>DOM</strong> (Document Object Model), uma representação em árvore da estrutura da página.</p> 
+                                        <p>Com ele, você pode:</p> 
+                                        <ul> 
+                                            <li>Selecionar elementos da página (`document.querySelector`, `getElementById`, etc.);</li> 
+                                            <li>Alterar conteúdo e atributos (`element.innerText`, `element.setAttribute`);</li> 
+                                            <li>Modificar estilos diretamente (`element.style.color = "red"`);</li> 
+                                            <li>Adicionar ou remover classes CSS;</li> 
+                                            <li>Inserir, mover ou remover elementos da página.</li> 
+                                        </ul>
+                                    
+                               
+                            <h3>Variáveis e tipos de dados</h3>
 
                                 <p>Em JavaScript, variáveis são usadas para armazenar valores e podem ser declaradas usando as palavras-chave var, let ou const. Cada uma tem suas particularidades:</p>
                                 <ul>
-                                    <li>var: Declara uma variável com escopo global ou de função. Pode ser reatribuída e redeclarada.</li>
-                                    <li>let: Declara uma variável com escopo de bloco. Pode ser reatribuída, mas não redeclarada no mesmo escopo.</li>
-                                    <li>const: Declara uma constante, cujo valor não pode ser reatribuído. Também tem escopo de bloco.</li>
+                                    <li><strong>var:</strong> Declara uma variável com escopo global ou de função. Pode ser reatribuída e redeclarada.</li>
+                                    <li><strong>let:</strong> Declara uma variável com escopo de bloco. Pode ser reatribuída, mas não redeclarada no mesmo escopo.</li>
+                                    <li><strong>const:</strong> Declara uma constante, cujo valor não pode ser reatribuído. Também tem escopo de bloco.</li>
                                 </ul>
 
                                 <p>Exemplo de declaração de variáveis:</p>
@@ -579,15 +699,15 @@
     const pi = 3.14;
                                     </pre>
 
-                                <h4>Os tipos de dados mais comuns em JavaScript incluem:</h4>
+                            <h3>Os tipos de dados mais comuns em JavaScript incluem:</h3>
                                     <ul>
-                                        <li>String: Texto, delimitado por aspas simples ou duplas (ex: 'Olá', "Mundo");</li>
-                                        <li>Number: Números inteiros ou decimais (ex: 42, 3.14);</li>
-                                        <li>Boolean: Valores lógicos verdadeiro (true) ou falso (false);</li>
-                                        <li>Array: Lista de valores, delimitada por colchetes (ex: [1, 2, 3], ['maçã', 'banana']);</li>
-                                        <li>Object: Estrutura de chave-valor, delimitada por chaves (ex: { nome: 'João', idade: 30 });</li>
-                                        <li>Null: Valor nulo, representado por null;</li>
-                                        <li>Undefined: Valor indefinido, representado por undefined.</li>
+                                        <li><strong>String:</strong> Texto, delimitado por aspas simples ou duplas (ex: 'Olá', "Mundo");</li>
+                                        <li><strong>Number:</strong> Números inteiros ou decimais (ex: 42, 3.14);</li>
+                                        <li><strong>Boolean:</strong> Valores lógicos verdadeiro (true) ou falso (false);</li>
+                                        <li><strong>Array:</strong> Lista de valores, delimitada por colchetes (ex: [1, 2, 3], ['maçã', 'banana']);</li>
+                                        <li><strong>Object:</strong> Estrutura de chave-valor, delimitada por chaves (ex: { nome: 'João', idade: 30 });</li>
+                                        <li><strong>Null:</strong> Valor nulo, representado por null;</li>
+                                        <li><strong>Undefined:</strong> Valor indefinido, representado por undefined.</li>
                                         </ul>
 
                             <h3>Operadores</h3>
@@ -605,33 +725,33 @@
                                 <h4>Operadores de Comparação</h4>
                                     <p>Usados para comparar valores e retornar verdadeiro (true) ou falso (false):</p>
                                     <ul>
-                                        <li>== (igualdade)</li>
-                                        <li>!= (desigualdade)</li>
-                                        <li>=== (igualdade estrita, compara valor e tipo)</li>
-                                        <li>!== (desigualdade estrita, compara valor e tipo)</li>
-                                        <li>&gt; (maior que)</li>
-                                        <li>&lt; (menor que)</li>
-                                        <li>&gt;= (maior ou igual a)</li>
-                                        <li>&lt;= (menor ou igual a)</li>
+                                        <li><strong>==</strong> (igualdade)</li>
+                                        <li><strong>!=</strong> (desigualdade)</li>
+                                        <li><strong>===</strong> (igualdade estrita, compara valor e tipo)</li>
+                                        <li><strong>!==</strong> (desigualdade estrita, compara valor e tipo)</li>
+                                        <li><strong>&gt;</strong> (maior que)</li>
+                                        <li><strong>&lt;</strong> (menor que)</li>
+                                        <li><strong>&gt;=</strong> (maior ou igual a)</li>
+                                        <li><strong>&lt;=</strong> (menor ou igual a)</li>
                                     </ul>   
 
                                 <h4>Operadores Lógicos</h4>
                                     <p>Usados para combinar expressões booleanas:</p>
                                     <ul>
-                                        <li>&amp;&amp; (E lógico, retorna true se ambas as expressões forem verdadeiras)</li>
-                                        <li>|| (OU lógico, retorna true se pelo menos uma expressão for verdadeira)</li>
-                                        <li>! (NÃO lógico, inverte o valor booleano)</li>
+                                        <li><strong>&amp;&amp;</strong> (E lógico, retorna true se ambas as expressões forem verdadeiras)</li>
+                                        <li><strong>||</strong> (OU lógico, retorna true se pelo menos uma expressão for verdadeira)</li>
+                                        <li><strong>!</strong> (NÃO lógico, inverte o valor booleano)</li>
                                     </ul>   
 
                             <h3>Estrutura de controle</h3>
 
                                 <p>Estruturas de controle são usadas para controlar o fluxo de execução do código, permitindo tomar decisões e repetir ações. As principais estruturas de controle em JavaScript são:</p>
                                 <ul>
-                                    <li>if...else: Condicional que executa um bloco de código se uma condição for verdadeira, e outro bloco se for falsa.</li>
-                                    <li>switch: Estrutura condicional que compara uma expressão com vários casos possíveis.</li>
-                                    <li>for: Laço de repetição que itera sobre um bloco de código um número específico de vezes.</li>
-                                    <li>while: Laço de repetição que executa um bloco de código enquanto uma condição for verdadeira.</li>
-                                    <li>do...while: Semelhante ao while, mas garante que o bloco seja executado pelo menos uma vez antes de verificar a condição.</li>
+                                    <li><strong>if...else:</strong> Condicional que executa um bloco de código se uma condição for verdadeira, e outro bloco se for falsa.</li>
+                                    <li><strong>switch:</strong> Estrutura condicional que compara uma expressão com vários casos possíveis.</li>
+                                    <li><strong>for:</strong> Laço de repetição que itera sobre um bloco de código um número específico de vezes.</li>
+                                    <li><strong>while:</strong> Laço de repetição que executa um bloco de código enquanto uma condição for verdadeira.</li>
+                                    <li><strong>do...while:</strong> Semelhante ao while, mas garante que o bloco seja executado pelo menos uma vez antes de verificar a condição.</li>
                                 </ul> 
                     </section>
                     
